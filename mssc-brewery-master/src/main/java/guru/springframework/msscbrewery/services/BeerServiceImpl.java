@@ -1,9 +1,10 @@
 package guru.springframework.msscbrewery.services;
 
-import guru.springframework.msscbrewery.web.model.BeerDto;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
+
+import guru.springframework.msscbrewery.web.model.BeerDto;
 
 import java.util.UUID;
 
@@ -12,6 +13,7 @@ import java.util.UUID;
  */
 @Slf4j
 @Service
+@Deprecated
 public class BeerServiceImpl implements BeerService {
     @Override
     public BeerDto getBeerById(UUID beerId) {
